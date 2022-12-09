@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <h1>my site</h1>
+    <a href="login">login</a>
+    <a href="login">home</a>
+    <form action = "" method = "post">
+        {% csrf_token %}
+        {{form.as_p }}
+        <input name="remember_me" type="checkbox">Keep me logged in
+        <br><br>
+        <input type="submit" value=Submit>
+    </form>
+</body>
+</html>
